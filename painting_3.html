@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="tabid-1 ">
+<head>
+    <title id="title">Yueying Zhong's painting</title>
+    <meta name="keywords"></meta>
+    <meta name="description"></meta>
+
+    <!--meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+    <link href="styles/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var descs = Array(
+          "The Image of Ink--56&nbsp;&nbsp;      43” x 28”   Ink on Xuan Paper  &nbsp;&nbsp;  2013",
+          "The Image of Ink--53&nbsp;&nbsp;   43” x 28”   Ink on Xuan Paper  &nbsp;&nbsp;  2013",
+          "The Image of Ink--36&nbsp;&nbsp;     94” x 47”   Ink on Xuan Paper  &nbsp;&nbsp;  2012",
+          "The Image of Ink--2  &nbsp;&nbsp;    55” x 27”     Ink on Xuan Paper  &nbsp;&nbsp;  2013",
+          "The Image of Ink--10  &nbsp;&nbsp;   72” x 72”   Ink on Xuan Paper  &nbsp;&nbsp;  2010",
+          "The Image of Ink--11  &nbsp;&nbsp;    72” x 72”   Ink on Xuan Paper  &nbsp;&nbsp;  2010",
+          "The Image of Ink--12  &nbsp;&nbsp;    72” x 72”   Ink on Xuan Paper  &nbsp;&nbsp;  2010",
+          "The Image of Ink--13  &nbsp;&nbsp;    72” x 72”   Ink on Xuan Paper  &nbsp;&nbsp;  2010",
+          "The Image of Ink--14  &nbsp;&nbsp;    142” x 142”   Ink on Xuan Paper  &nbsp;&nbsp;  2011",
+          "The Image of Ink--15  &nbsp;&nbsp;    94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;  2011",
+          "The Image of Ink--17  &nbsp;&nbsp;    94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2011",
+         "The Image of Ink--18  &nbsp;&nbsp;    94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;  2012",
+        "The Image of Ink--19  &nbsp;&nbsp;    94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;  2012",
+        "The Image of Ink--20  &nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;  2012",
+        "The Image of Ink--21  &nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;  2012," +
+        "The Image of Ink--22  &nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;  2012",
+     "The Image of Ink--23&nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--24&nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--28&nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+
+     "The Image of Ink--29&nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--30&nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--31&nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--32&nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--33 &nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--34 &nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--35 &nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--37 &nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--40 &nbsp;&nbsp;   94” x 94”   Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+     "The Image of Ink--41 &nbsp;&nbsp;   47”x 47”   Ink on Xuan Paper      2013",
+
+      "The Image of Ink--42 &nbsp;&nbsp;   47” x 47”   Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+     "The Image of Ink--43 &nbsp;&nbsp;   47” x 42”   Ink on Xuan Paper  &nbsp;&nbsp;   2013  ",
+     "The Image of Ink--45 &nbsp;&nbsp;   55” x 110”   Ink on Xuan Paper    2013",
+     "The Image of Ink--48 &nbsp;&nbsp;   72” x 36”   Ink on Xuan Paper  &nbsp;&nbsp;   2010",
+     "The Image of Ink--49 &nbsp;&nbsp;   62” x 62”   Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+     "The Image of Ink--50 &nbsp;&nbsp;   55” x 55”   Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+//     "The Image of Ink--25 &nbsp;&nbsp;   55” x 55”   Ink on Xuan Paper  &nbsp;&nbsp;   2012", //36
+         "The Image of Ink--4 &nbsp;&nbsp;    55” x 55”     Ink on Xuan Paper  &nbsp;&nbsp;   2013",      //45
+
+     "The Image of Ink--27 &nbsp;&nbsp;   94” x 282”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--26 &nbsp;&nbsp;   94” x 282”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+     "The Image of Ink--38 &nbsp;&nbsp;   94” x 141”   Ink on Xuan Paper  &nbsp;&nbsp;   2012",
+
+     "The Image of Ink--8 &nbsp;&nbsp;    94” x 141”     Ink on Xuan Paper  &nbsp;&nbsp;   2013", //40
+     "The Image of Ink--9 &nbsp;&nbsp;    45” x 72”     Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+
+
+     "The Image of Ink--5 &nbsp;&nbsp;    55 ”x 55”     Ink on Xuan Paper  &nbsp;&nbsp;   2013 ",
+     "The Image of Ink--6 &nbsp;&nbsp;    55” x 55”     Ink on Xuan Paper  &nbsp;&nbsp;   2013 ",
+     "The Image of Ink--7 &nbsp;&nbsp;    55” x 55”     Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+      "The Image of Ink--25 &nbsp;&nbsp;   55” x 55”   Ink on Xuan Paper  &nbsp;&nbsp;   2012", //36
+     //"The Image of Ink--4 &nbsp;&nbsp;    55” x 55”     Ink on Xuan Paper  &nbsp;&nbsp;   2013",      //45
+
+
+     "The Image of Ink--16 &nbsp;&nbsp;   94” x 141”   Ink on Xuan Paper  &nbsp;&nbsp;   2011",
+     "The Image of Ink--47 &nbsp;&nbsp;    120 ”x 70”   Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+     "The Image of Ink--57  &nbsp;&nbsp;   120 ”x 70”   Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+     "The Image of Ink--51 &nbsp;&nbsp;    141” x 47”   Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+     "The Image of Ink--54 &nbsp;&nbsp;    43” x 112”   Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+     "The Image of Ink--58 &nbsp;&nbsp;    72” x 45”     Ink on Xuan Paper  &nbsp;&nbsp;   2013",
+     "The Image of Ink--55&nbsp;&nbsp;       39” x 28”   Ink on Xuan Paper  &nbsp;&nbsp;  2013"
+);
+
+
+        var images = Array(
+                "跃英2013画作_033.jpg",
+                "跃英2013画作_027.jpg",
+                "Untitled_00091.jpg",
+                "2013新作_034.jpg",
+                "Image-006.jpg",
+                "Image-014.jpg",
+                "Image-015.jpg",
+                "Image-016.jpg",
+                "Image-027.jpg",
+                "Image-035.jpg",
+                "Untitled_00029.jpg",
+                "Untitled_00033.jpg",
+                "Untitled_00041.jpg",
+                "Untitled_00043.jpg",
+                "Untitled_00044.jpg",
+                "Untitled_00045.jpg",
+                "Untitled_00047.jpg",
+                "Untitled_00050.jpg",
+                "Untitled_00065.jpg",
+                "Untitled_00069.jpg",   //20
+                "Untitled_00071.jpg",
+                "Untitled_00072.jpg",
+                "Untitled_00073.jpg",
+                "Untitled_00075.jpg",
+                "Untitled_00085.jpg",
+                "Untitled_00087.jpg",
+                "Untitled_00092.jpg",
+                "抽象小画_004.jpg",
+                "抽象小画_005.jpg",          //30
+                "抽象小画_006.jpg",
+                "抽象小画_007.jpg",
+                "跃英2013画作_006.jpg",
+                "跃英2013画作_016.jpg",
+                "跃英2013画作_017.jpg",
+                "跃英2013画作_024.jpg",
+
+                //"Untitled_00052.jpg",     //36
+                "Untitled_00028.jpg",              //45
+                "Untitled_00062.jpg",
+
+                "Untitled_00058.jpg",
+                "Untitled_00093.jpg",
+
+                //"2013新作_056.jpg",
+                "2013新作_058.jpg",             //40
+
+                "2013新作_044.jpg",
+                "2013新作_045.jpg",
+                "2013新作_047.jpg",
+                "2013新作_049.jpg",
+                // "Untitled_00028.jpg",              //45
+                "Untitled_00052.jpg",     //36
+
+                "跃英2013画作_009.jpg",
+                "跃英2013画作_011.jpg",
+                "跃英2013画作_025.jpg",
+                "跃英2013画作_030.jpg",
+                "2013新作_056.jpg",
+                "跃英2013画作_031.jpg"
+        )
+
+        function buildSegment (thumbDir, largeImageDir, srcImage, description)  {
+            return ' <li> ' +
+                    ' <a> ' +
+                    ' <img src='+ thumbDir + '/' + srcImage + ' onClick="showImage(\'' + largeImageDir +  '/' + srcImage + '\',\'' +description + '\');" >' +
+                    ' </a><br> ' +
+                           //'  <span class="caption">' + description + ' </span> ' +
+                            ' </li>' +
+                            ' ' ;
+        }
+
+        $( document ).ready(function() {
+
+            var htmlText ="";
+
+            for (var i=0;i<images.length;i++)
+            {
+                var thumbPath = "yueying/thumbnails_waterink";
+                var largeImagePath = "yueying/midsize_waterink";
+                htmlText += buildSegment(thumbPath, largeImagePath, images[i], descs[i]);
+            }
+
+          document.getElementById('publications-table').innerHTML =
+            '<ul class="publications-table"> ' +
+                  htmlText +
+            '</ul>';
+
+        });
+
+        function showImage(srcImage, description) {
+
+            document.getElementById('publications-table').innerHTML  =
+                  '<ul>' +
+                    ' <li> ' +
+                            '       <a href="painting_3.html" target="_blank">         ' +
+                            '       <img src='+ srcImage +'> ' +
+                            '       </a><br> ' +
+                            '        <span class="caption">' + description + ' </span> ' +
+                    '</li> ' +
+                    '<li> &nbsp; </li> ' +
+                    '</ul>';
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+<form name="painting-3"  id="painting-3">
+
+<table id="tblouterTable" class="outer-table" width="100%" cellspacing="0" cellpadding="0" border="0" height="100%">
+<tbody>
+<tr>
+<td valign="top" height="100%" class="mainCell">
+<table cellspacing="0" cellpadding="0" border="0" class="mainTable">
+<tbody>
+<tr>
+    <td id="TopPane" colspan="4" class="topPane">
+
+        <div class="top page-width">
+            <div class="logo-company">
+                <a href="index.html">
+                    <H4><B>钟跃英</B></H4>
+                    <H4>Yueying Zhong Ink Painting</H4>
+                </a>
+            </div>
+            <ul class="language-menu">
+                <li>
+                    <a href="painting_3.html">
+                        English
+                    </a>
+                </li>
+                <li>
+                    &nbsp;|&nbsp;
+                </li>
+                <li>
+                    <a href="painting_3_ch.html">
+                        中文
+                    </a>
+                </li>
+            </ul>
+            <div class="push">
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="painting_1.html">
+                        Ink Painting 1
+                    </a>
+                </li>
+                <li>
+                    <a href="painting_2.html">
+                        Ink Painting 2
+                    </a>
+                </li>
+                <li>
+                    <a href="painting_3.html">
+                        Ink Painting 3
+                    </a>
+                </li>
+                <li>
+                    <a href="exhibition.html">
+                        Exhibitions
+                    </a>
+                </li>
+                <li>
+                    <a href="publications.html">
+                        Publications
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </td>
+
+</tr>
+<tr>
+
+    <td id="ContentPane" class="contentPane" valign="top">
+        <div id="publications" class="content page-width">
+            <div class="title-page">
+                <h1>Yueying Zhong's Ink Painting</h1>
+            </div>
+            <div id = "publications-table" >
+                <ul  class="publications-table">
+                <li>
+                    &nbsp;
+                </li>
+            </ul>
+            </div>
+        </div>
+    </td>
+
+</tr>
+<tr>
+
+    <td id="ContentPane" class="contentPane" valign="top">
+
+        <div id="homepage" class="content  page-width">
+            <div class="content page-width2">
+                <BR>
+                Mr. Zhong has been focusing his art creation on exploring the expression of ink painting. He has tried to excavate the various possibilities of ink and rice paper (xuan zhi) and to dig out new artistic elements. When he did a painting, a great amount of water was used as it could provide layers of the ink and express different depths of structure. He has tested the endurance of rice paper, letting ink and water flow freely to create new images and styles. Zhong’s works represent his achievement in all these explorations and have built up a new art language of contemporary ink painting. Indeed, Zhong’s philosophy lies in advocating our “ inner nature”, which means, “following our own spirits and characters”. His landscapes, for example, don’t present what we see but what he had in his inner mind. The language communicated through the abstract expression of ink is called yixiang (mind images) and yijing (mind compositions), referring to the images formed between natural inspiration and his personal insight.
+                Zong’s new large-scaled paintings with summarized and simplified details of description have created a vivid and alive atmosphere (rhythmic vitality), delineating clearly the essence of ink painting: “simple means more”. This has also confirmed what Shih-Tao, a great artist of the early Qing period (17th c.) had said, “One stroke’s principle is for all.”
+
+                <P></P>
+                Meilan Sun, Professor of Art <BR>
+                Central Academy of Fine Arts, China
+
+            </div>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td id="BottomPane" colspan="4" class="bottomPane">
+        <div class="bottom page-width">
+            <hr>
+            <span class="copyrights"> </span>
+        </div>
+    </td>
+
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+</form>
+
+
+</body>
+</html>

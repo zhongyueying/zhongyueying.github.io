@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="tabid-1 ">
+<head>
+    <title id="title">Yueying Zhong's painting</title>
+    <meta name="keywords"></meta>
+    <meta name="description"></meta>
+
+    <!--meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+    <link href="styles/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var descs = Array(
+                "葱郁&nbsp;&nbsp;180cm x 90cm &nbsp;       水墨 宣纸&nbsp;&nbsp;2009",
+                "新绿&nbsp;&nbsp;  180cm x 90cm &nbsp;    水墨 宣纸&nbsp;&nbsp;2009",
+                "清风&nbsp;&nbsp; 180cm x 90cm &nbsp;&nbsp;  水墨 宣纸&nbsp;&nbsp;      2009",
+                //"岁月 140cm x 90cm&nbsp;&nbsp;水墨 宣纸2013",                 //32
+                "雨蒙蒙&nbsp;&nbsp;   180cm x 90cm &nbsp;     水墨 宣纸 2006",             //4
+                "山岳&nbsp;&nbsp;    180cm x 90cm &nbsp;水墨 宣纸2005",
+                "赫色调子&nbsp;&nbsp; 180cm x 90cm &nbsp; 水墨 宣纸    2006",
+                "生气&nbsp;&nbsp;   180cm x 90cm &nbsp;水墨 宣纸    2006",
+                "寻觅&nbsp;&nbsp;  140cm x 70cm   &nbsp;   水墨 宣纸      2004",
+                "低语&nbsp;&nbsp;180cm x 90cm &nbsp;水墨 宣纸    1993",
+                "清幽  &nbsp;&nbsp;240cm x 120cm  &nbsp;  水墨 宣纸   &nbsp;&nbsp; 2011",
+                // "暮色&nbsp;&nb sp;   240cm x 240cm 水墨 宣纸    2010",
+                "闻风 180cm x 90cm&nbsp;水墨 宣纸  &nbsp;  2007",    //12
+                "升      180cm x 90cm 水墨 宣纸    2006",        //13
+                "晚风 180cm x 90cm 水墨 宣纸 &nbsp;   2006",    //14
+                "岁月&nbsp;&nbsp; 180cm x 90cm&nbsp; 水墨 宣纸    2006",   //15
+                "雨意&nbsp;&nbsp;180cm x 90cm&nbsp;水墨 宣纸 &nbsp;  2008",   //16
+                "凝重&nbsp;&nbsp; 180cm x 90cm&nbsp;&nbsp;   水墨 宣纸&nbsp;   2008", //17
+                "苍翠180cm x 90cm &nbsp;&nbsp;水墨 宣纸 &nbsp;&nbsp;    2008",      //18
+                "唤醒 &nbsp;&nbsp;180cm x 90cm 水墨 宣纸 &nbsp;&nbsp;   2008",     //19
+                "山林 &nbsp;&nbsp; 140cm x 90cm  &nbsp;  水墨 宣纸 &nbsp;&nbsp;   2002",         //20
+                "辉映 &nbsp;&nbsp;140cm x 90cm  &nbsp;&nbsp;  水墨 宣纸 &nbsp;  2008",//GO TO 34
+
+                "寒意 &nbsp;&nbsp; 140cm x 90cm  &nbsp;&nbsp;   水墨 宣纸   &nbsp;&nbsp;  2008",    //22
+                "闻风 &nbsp;&nbsp;140cm x 90cm  &nbsp;&nbsp;   水墨 宣纸  &nbsp;&nbsp;   2008 ",//23
+                "苍茫  &nbsp;&nbsp;  140cm x 90cm  &nbsp;&nbsp;   水墨 宣纸  &nbsp;&nbsp;   2007",    //24
+                "雾&nbsp;&nbsp; 180cm x 90cm  &nbsp;&nbsp;       水墨 宣纸 &nbsp;&nbsp;   2008",     //25
+                "新雨&nbsp;&nbsp;180cm x 90cm  &nbsp;&nbsp;    水墨 宣纸 &nbsp;&nbsp;   2006",     //26
+                "朝霞&nbsp;&nbsp;  180cm x 90cm &nbsp;&nbsp;       水墨 宣纸  &nbsp;&nbsp;  2007",
+                "雪霁&nbsp;&nbsp; 180cm x 90cm&nbsp;&nbsp; 水墨 宣纸    2005 ",
+                "暮蔼&nbsp;&nbsp; 140cm x 70cm&nbsp;&nbsp; 水墨 宣纸    2008",
+                "湖的喃语&nbsp;&nbsp; 140cm x 70cm&nbsp;&nbsp; 水墨 宣纸    1999",
+                "山形依旧&nbsp;&nbsp;240cm x 120cm        水墨 宣纸    2011",
+
+                "岁月&nbsp;&nbsp; 140cm x 90cm&nbsp;&nbsp;水墨 宣纸&nbsp;&nbsp;2013",
+                "回春&nbsp;&nbsp;240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2011",
+                "回响&nbsp;&nbsp; 240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2011",
+                "夜曲&nbsp;&nbsp; 140cm x 140cm&nbsp;&nbsp;水墨 宣纸&nbsp;&nbsp;1998",
+                "暮色&nbsp;&nbsp;   240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2010",
+                "生命痕迹&nbsp;&nbsp;  240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2010",
+                "生升&nbsp;&nbsp; 240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2010",
+                "幽远&nbsp;&nbsp;   240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2010",
+                "时间痕迹&nbsp;&nbsp;  240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2010",
+                "空山氤氲&nbsp;&nbsp;240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2010",
+                "更生&nbsp;&nbsp;  240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2011",
+                "薰风&nbsp;&nbsp;240cm x 240cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2011",
+                "秋绪&nbsp;&nbsp;&nbsp;&nbsp;140cm x 70cm&nbsp;&nbsp;   水墨 宣纸&nbsp;&nbsp;   2002",
+                "涌动的山脉&nbsp;&nbsp;  140cm x 90cm    水墨 宣纸 &nbsp;&nbsp;   2002",
+
+              "雨后 &nbsp;&nbsp;&nbsp;&nbsp;140cm x 90cm&nbsp;&nbsp;水墨 宣纸  &nbsp;&nbsp;  2001",
+
+        "永恒&nbsp;&nbsp;140cm x 90cm&nbsp;&nbsp;  水墨 宣纸&nbsp;&nbsp;2002&nbsp;&nbsp;&nbsp;&nbsp;  ",
+        "流年&nbsp;&nbsp; 180cm x 90cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;2008&nbsp;&nbsp;&nbsp;&nbsp; ",
+                "幻境&nbsp;&nbsp;180cm x 90cm&nbsp;&nbsp; 水墨 宣纸 &nbsp;&nbsp;   2005",
+                "山岚&nbsp;&nbsp;180cm x 90cm&nbsp;&nbsp; 水墨 宣纸 &nbsp;&nbsp;   2008",
+                "幽谷&nbsp;&nbsp; 180cm x 90cm&nbsp;&nbsp; 水墨 宣纸 &nbsp;&nbsp;   2006",
+                "润物无声&nbsp;&nbsp; 140cm x 90cm&nbsp;&nbsp;水墨 宣纸&nbsp;&nbsp;2002",
+                "回声&nbsp;&nbsp;   480cm x 120cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp; 2010",
+                "秋雨 &nbsp;&nbsp;&nbsp;&nbsp; 158cm x 35cm&nbsp;&nbsp;水墨 宣纸  &nbsp;&nbsp;1998",
+                "天籁&nbsp;&nbsp;   720cm x 120cm&nbsp;&nbsp;  水墨 宣纸&nbsp;&nbsp; 2010"
+
+        );
+
+        var images = Array(
+                "for_art_LA_作品_2013年_001.jpg",
+                "for_art_LA_作品_2013年_009.jpg",
+                "for_art_LA_作品_2013年_011.jpg",
+                "GG8Z3576AA1.jpg",
+                "GG8Z3584-3.jpg",
+                "GG8Z3593AA1.jpg",
+                "GG8Z3598AA1.jpg",
+                "GG8Z3601AA1.jpg",
+                "GG8Z3628AA1.jpg",
+                "Image-032.jpg",
+              //  "Image-002.jpg",
+        "双年展作品--2.JPG",
+                "双年展作品--3.JPG",
+                "双年展作品--4.JPG",
+                "双年展作品--5.JPG",
+                "双年展作品--8.JPG",
+                "双年展作品--9.JPG",
+                "双年展作品--10.JPG",
+                "双年展作品备用.JPG",
+                "新相机拍_110.jpg",
+                "新相机拍_118.jpg",
+                "新相机拍_126.jpg",
+                "新相机拍_127.jpg",     //22
+                "新相机拍_141.jpg",     //23
+                "新相机拍_176.jpg", //雾   //24
+                "新相机拍_179.jpg", // 新雨    //25
+                "新相机拍_189.jpg",           //26
+
+                "新相机拍_210.jpg",
+                "新相机拍_268.jpg",
+                "新相机拍_272.jpg",
+                "Image-031.jpg",    //30
+                "2013新作_051.jpg",
+                "Image-033.jpg",
+                "Image-034.jpg",
+                "新相机拍_122.jpg",
+                "Image-002.jpg",
+                "Image-009.jpg",
+                "Image-012.jpg",
+                "Image-022.jpg",
+                "Image-023.jpg",
+                "Image-024.jpg",
+
+                "Image-025.jpg",
+
+
+                "Image-026.jpg",
+                "GG8Z3561AA1.jpg",
+                "新相机拍_106.jpg",
+                "新相机拍_123.jpg",
+                "新相机拍_150.jpg",
+                "新相机拍_174.jpg",
+                "新相机拍_175.jpg",
+                "新相机拍_185.jpg",
+                "新相机拍_194.jpg",
+
+
+                "新相机拍_107.jpg",  //9
+                "_ZZH0127.JPG",      //43
+                "新相机拍_113.jpg",       //46
+                "_ZZH0124.JPG"
+
+        );
+
+
+        function buildSegment (thumbDir, largeImageDir, srcImage, description)  {
+            return ' <li> ' +
+            ' <a> ' +
+                    ' <img src='+ thumbDir + '/' + srcImage + ' onClick="showImage(\'' + largeImageDir +  '/' + srcImage + '\',\'' +description + '\');" >' +
+            ' </a><br> ' +
+            //'  <span class="caption">' + description + ' </span> ' +
+            ' </li>' +
+                            ' '
+        }
+
+        $( document ).ready(function() {
+
+            var htmlText ="";
+
+            for (var i=0;i<images.length;i++)
+            {
+                var thumbPath = "yueying/thumbnails_inkcolor";
+                var largeImagePath = "yueying/midsize_inkcolor";
+                htmlText += buildSegment(thumbPath, largeImagePath, images[i],  descs[i]);
+
+            }
+
+            document.getElementById('publications-table').innerHTML =
+            '<ul class="publications-table"> ' +
+            htmlText +
+            '</ul>';
+
+        });
+
+        function showImage(srcImage, description) {
+
+            document.getElementById('publications-table').innerHTML  =
+            '<ul>' +
+            ' <li> ' +
+                            '       <a href="painting_2_ch.html" target="_blank">         ' +
+                            '       <img src='+ srcImage +'> ' +
+            '       </a><br> ' +
+                            '        <span class="caption">' + description + ' </span> ' +
+            '</li> ' +
+            '<li> &nbsp; </li> ' +
+            '</ul>';
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+<form name="painting-2"  id="painting-2">
+
+    <table id="tblouterTable" class="outer-table" width="100%" cellspacing="0" cellpadding="0" border="0" height="100%">
+        <tbody>
+        <tr>
+            <td valign="top" height="100%" class="mainCell">
+                <table cellspacing="0" cellpadding="0" border="0" class="mainTable">
+                    <tbody>
+                    <tr>
+                        <td id="TopPane" colspan="4" class="topPane">
+
+                            <div class="top page-width">
+                                <div class="logo-company">
+                                    <a href="index_ch.html">
+                    <H4><B>钟跃英</B></H4>
+                                    </a>
+            </div>
+                                <ul class="language-menu">
+                                    <li>
+                    <a href="painting_2.html">
+                        English
+                    </a>
+                                    </li>
+                                    <li>
+                    &nbsp;|&nbsp;
+                                    </li>
+                                    <li>
+                    <a href="painting_2_ch.html">
+                        中文
+                    </a>
+                                    </li>
+            </ul>
+                                <div class="push">
+            </div>
+                                <ul class="main-menu-ch">
+                                    <li>
+                    <a href="painting_1_ch.html">
+                        水墨绘画—水墨人物
+                    </a>
+                                    </li>
+                                    <li>
+                    <a href="painting_2_ch.html">
+                        水墨绘画—彩墨
+                    </a>
+                                    </li>
+                                    <li>
+                    <a href="painting_3_ch.html">
+                        水墨绘画-水墨
+                    </a>
+                                    </li>
+                                    <li>
+                    <a href="exhibition_ch.html">
+                        展览
+                    </a>
+                                    </li>
+                                    <li>
+                    <a href="publications_ch.html">
+                        著作,论文
+                    </a>
+                                    </li>
+                                    <li>
+                    <a href="about_ch.html">
+                        关于我
+                    </a>
+                                    </li>
+                                    <li>
+                    <a href="contact_ch.html">
+                        联系方式
+                    </a>
+                                    </li>
+            </ul>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td id="ContentPane" class="contentPane" valign="top">
+                            <div id="publications" class="content page-width">
+                                <div class="title-page">
+                                    <h1>钟跃英 水墨绘画—彩墨</h1>
+            </div>
+            <div id = "publications-table" >
+                <ul  class="publications-table">
+                                        <li>
+                    &nbsp;
+                                        </li>
+            </ul>
+                            </div>
+        </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td id="ContentPane" class="contentPane" valign="top">
+
+                            <div id="homepage" class="content  page-width">
+                                <div class="content page-width2">
+                                    <BR>
+                这些半抽象山水画所体现的, 仍然是纯粹的中国绘画风格, 但在作品表达方式上却不再是传统样式, 突破了程式画法, 强调的是水和墨的表现力, 以及中国画的当代面貌和尊严. 他选择了与众不同的表达方式, 无论在画面构图上, 还是水墨语言上, 都显示出他的独到之处.他所探索的是水墨画的表达潜力, 水墨绘画如果不按照常规的画法, 到底还有没有另一种表现的可能.
+                最为重要的,钟跃英作品表现的,不是他所看到的某种特定的自然现象, 而是他心中对自然的认识和理解, 想象和联想, 意象和创造.展现出独特的绘画风格,一种半抽象的笔墨语言, 引发我们的浮想连翩, 具有象征性的风吹草动和山雾弥漫的动感,山体拔地而起的雄浑气势, 墨色运用的玄妙神秘, 令人回味无穷.
+                钟的绘画令人振奋和欣喜,传达的是形而的上美学理念和跨越地域性的文化现象, 一种前卫性的当代中国画.从再现艺术转化为抽象概括的形式表达, 与此同时, 他将中国绘画那种美妙静谧的意境, 不断地延伸和扩展, 从中国来到美国的加州, 又从加州步入到二十一世纪的国际艺术舞台.
+
+
+
+
+                                    <P></P>
+                                    马克.丹,约翰逊 <BR>
+                                    美国加州旧金山州立大学美术史教授,美术馆馆长
+
+                            </div>
+        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="BottomPane" colspan="4" class="bottomPane">
+                            <div class="bottom page-width">
+                                <hr>
+            <span class="copyrights"> </span>
+                            </div>
+                        </td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</form>
+
+
+</body>
+</html>

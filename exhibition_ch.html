@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="tabid-46 isfair-1 ">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title id="title">Yueying Zhong's painting</title>
+    <meta name="keywords"></meta>
+    <meta name="description"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link href="styles/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        var images2 = Array(
+                "2011沈阳展_079.jpg",
+                "2011沈阳展_080.jpg",
+                "2011沈阳展_083.jpg",
+                "2011沈阳展_084.jpg",
+                "2011沈阳展_087.jpg");
+        var description1 = "2012年应鲁迅美术学院院长和学术委员会<BR>的邀请,第二次在鲁迅美术学院美术馆举办<BR>个人大型专题展览,其间鲁迅美术学院印刷<BR>出版了翰墨轻风钟跃英大型水墨绘画画集."
+
+        var images1 = Array(
+                "2012年国内展_149.jpg",
+                "2012年国内展_166.jpg",
+                "2012年国内展_168.jpg",
+                "2012年国内展_175.jpg",
+                "2012年国内展_180.jpg"
+        );
+        var description2 = "2012年应鲁迅美术学院院长和学术委员会<BR>的邀请,第二次在鲁迅美术学院美术馆举办<BR>个人大型专题展览,其间鲁迅美术学院印刷<BR>出版了翰墨轻风钟跃英大型水墨绘画画集."
+
+
+
+        var images3 = Array(
+               // "DSC01839.JPG",
+               // "DSC02522.JPG",
+                "DSC02542.JPG",
+              //  "DSC02547.JPG",
+              //  "DSC02553.JPG",
+                "DSC02794.JPG",
+                "DSC02916.JPG",
+                "DSC02918.JPG",
+                "DSC02921.JPG"
+                //"DSC_0884.JPG"
+        );
+
+        var description3 = "2012年应鲁迅美术学院院长和学术委员会<BR>的邀请,第二次在鲁迅美术学院美术馆举办<BR>个人大型专题展览,其间鲁迅美术学院印刷<BR>出版了翰墨轻风钟跃英大型水墨绘画画集."
+
+
+        var images4 = Array(
+                "St._Louis___芳帮展览_2009_002.jpg",
+                "St._Louis___芳帮展览_2009_003.jpg",
+                "St._Louis___芳帮展览_2009_004.jpg",
+                "St._Louis___芳帮展览_2009_005.jpg",
+                "St._Louis___芳帮展览_2009_007.jpg",
+                "St._Louis___芳帮展览_2009_008.jpg"
+        )
+        var description4 = "2012年应鲁迅美术学院院长和学术委员会<BR>的邀请,第二次在鲁迅美术学院美术馆举办<BR>个人大型专题展览,其间鲁迅美术学院印刷<BR>出版了翰墨轻风钟跃英大型水墨绘画画集."
+
+
+        var images5= Array(
+                "Picture_014.jpg",
+                "Picture_020.jpg"
+        )
+        var description5 = "2012年应鲁迅美术学院院长和学术委员会<BR>的邀请,第二次在鲁迅美术学院美术馆举办<BR>个人大型专题展览,其间鲁迅美术学院印刷<BR>出版了翰墨轻风钟跃英大型水墨绘画画集."
+
+        //todo: for each image, there is corresponding description
+        function changeSrc(idIndex, index) {
+            var images ;
+            var desc;
+            if (idIndex == 0) {
+                images = images1;
+                desc = description1;
+            }
+            if (idIndex == 1) {
+                images = images2;
+                desc = description2;
+            }
+            if (idIndex == 2){
+                images = images3;
+                desc = description3;
+            }
+            if (idIndex == 3) {
+                images = images4;
+                desc = description4;
+            }
+            if (idIndex == 4) {
+                images = images5;
+                desc = description5;
+            }
+
+
+            changeSrcInner(index,"#image_" + (idIndex+1), images, "text_" + (idIndex+1), desc);
+        }
+        function changeSrcInner(index,imageId, imageArray, descId, desc) {
+            var imgPath = "yueying/exhibitions/"+ imageArray[index];
+            $(imageId).attr("src", imgPath);
+            var myTextArea = document.getElementById(descId);
+            myTextArea.innerHTML=
+             '<p> ' +
+             '  <span class="dates color-9">' + desc + '</span>' +
+             '  <br>' +
+             ' </p>';
+        }
+
+    </script>
+
+</head>
+<body>
+<form name="exhibition" id="exhibition_form">
+
+<table id="tblouterTable" class="outer-table" width="100%" cellspacing="0" cellpadding="0" border="0" height="100%">
+<tbody>
+<tr>
+<td valign="top" height="100%" class="mainCell">
+    <table cellspacing="0" cellpadding="0" border="0" class="mainTable">
+    <tbody>
+<tr>
+    <td id="TopPane" colspan="4" class="topPane">
+
+        <div class="top page-width">
+            <div class="logo-company">
+                <a href="index_ch.html">
+                    <H4><B>钟跃英</B></H4>
+                </a>
+            </div>
+            <ul class="language-menu">
+                <li>
+                    <a href="exhibition.html">
+                        English
+                    </a>
+                </li>
+                <li>
+                    &nbsp;|&nbsp;
+                </li>
+                <li>
+                    <a href="exhibition_ch.html">
+                        中文
+                    </a>
+                </li>
+            </ul>
+            <div class="push">
+            </div>
+            <ul class="main-menu-ch">
+                <li>
+                    <a href="painting_1_ch.html">
+                        水墨绘画—水墨人物
+                    </a>
+                </li>
+                <li>
+                    <a href="painting_2_ch.html">
+                        水墨绘画—彩墨
+                    </a>
+                </li>
+                <li>
+                    <a href="painting_3_ch.html">
+                        水墨绘画-水墨
+                    </a>
+                </li>
+                <li>
+                    <a href="exhibition_ch.html">
+                        展览
+                    </a>
+                </li>
+                <li>
+                    <a href="publications_ch.html">
+                        著作,论文
+                    </a>
+                </li>
+                <li>
+                    <a href="about_ch.html">
+                        关于我
+                    </a>
+                </li>
+                <li>
+                    <a href="contact_ch.html">
+                        联系方式
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td id="ContentPane" class="contentPane" valign="top">
+    <table id="_ctl6_dlExhibition" class="tableTemplate" cellspacing="0" cellpadding="0" border="0"
+       style="width:100%;border-collapse:collapse;">
+    <tbody>
+<tr>
+    <td>
+        <div id="exhibitions" class="content page-width">
+
+    <div class="list-wrapper current">
+
+</div>
+    <span id="exhibition_title">
+		<div class="title-page">
+            <h1>
+                展览</h1>
+        </div>
+    </span>
+
+    <div class="list-wrapper forthcoming active">
+    <table id="exhibition" class="event-list" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tbody>
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_1" src="yueying/exhibitions/2012清华个展.jpg" border="0">
+                        </a>
+
+                    </div>
+                    <div id = "text_1" class="text-area">
+                        <p>
+                            <span class="dates color-9">2012年应清华大学美术学院的邀请,<BR>在清华大学美术学院美术馆举办题为:<BR>”翰墨轻风”---钟跃英大型水墨艺术<BR>巡回览展, 展出大幅尺寸水墨作品33件.<BR>并应邀为学院师生做了题为<BR>”西方当代艺术”的学术报告.</span><br><BR>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img  id ="image_2" src="yueying/exhibitions/2012年鲁美个展.jpg" border="0">
+                        </a>
+
+                    </div>
+                    <div id = "text_2" class="text-area">
+                        <p>
+                            <span class="dates color-9"> 2012年应鲁迅美术学院的第二次邀请,<BR>在鲁迅美术学院美术馆举办了题为:<BR>”翰墨轻风”---钟跃英大型水墨艺术<BR>巡回览展, 展出大幅尺寸水墨作品38件.<BR>展览其间鲁迅美术学院同时举办了<BR>钟跃英大型水墨艺术研讨会. </span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_3" src="yueying/exhibitions/2011沈阳大学个展.jpg" border="0">
+                        </a>
+                    </div>
+                    <div id = "text_3" class="text-area">
+                        <p>
+                            <span id="3_date" class="dates color-9">2011年应沈阳大学美术学院的邀请, <BR>在沈阳大学美术学院美术馆举办了题为:<BR>”空山不语”—钟跃英大型水墨艺术展览, <BR>展出大型水墨绘画作品55件.并应邀为学院<BR>做了题为”原创性艺术”的专题报告.</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_4" src="yueying/exhibitions/2009芳帮个展.jpg" border="0">
+                        </a>
+                    </div>
+
+                    <div  id = "text_4"  class="text-area">
+                        <p>
+                            <span id="4_date" class="dates color-9"> 2009年应美国芳帮大学的邀请, 在学院美术系<BR>画廊举办题为:”宏伟的意象”---钟跃英的水墨<BR>艺术展览. 展览其间为学院师生做了关于当代<BR>中国水墨画艺术的专题演讲.</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_6" src="yueying/exhibitions/2007鲁美个展.jpg" border="0">
+                        </a>
+                      </div>
+                    <div  id = "text_6" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9">2007年应鲁迅美术学院学术委员会和中国画系<BR>的邀请,在去国后第一次回国, 在鲁迅美术学院<BR>美术馆
+举办题为”浮云一别后,流水十年间”大型<BR>个人展,展出大幅尺寸作品70件.展览其间为学院<BR>师生做了题为”艺术创造力障碍的突破”专题报告.
+</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_7" src="yueying/exhibitions/2007中百个展.jpg" border="0">
+                        </a>
+                    </div>
+                    <div  id = "text_7" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9">2007年个人展在山东中百美术馆举办,<BR>这个展览是在鲁迅美术学院美术馆个人<BR>展后在国内的巡回展览.</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="wrapper">
+
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_7" src="yueying/exhibitions/2003圣路易大学.jpg" border="0">
+                        </a>
+                    </div>
+                    <div  id = "text_7" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9"> 2003年应美国圣路易斯大学邀请,在大学美术馆<BR>举办题为:”悬浮”---钟跃英的水墨艺术展览.因东<BR>方绘画的独特性, 展览延长至两个半月. 圣路易<BR>斯各新闻媒体做了专题报道.</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_7" src="yueying/exhibitions/2013湖社联合展.jpg" border="0">
+                        </a>
+                    </div>
+                    <div  id = "text_7" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9">湖社/鲁迅美术学院美术馆, 2013</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_7" src="yueying/exhibitions/2013浙江美术馆.jpg" border="0">
+                        </a>
+                    </div>
+                    <div  id = "text_7" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9">浙江美术馆, 2013</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_7" src="yueying/exhibitions/2013文化中心.jpg" border="0">
+                        </a>
+                    </div>
+                    <div  id = "text_7" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9">旧金山中华文化中心/旧金山州立大学, 2013</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_7" src="yueying/exhibitions/2010台北展.jpg" border="0">
+                        </a>
+                    </div>
+                    <div  id = "text_7" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9">台北2010当代水墨双年展, 2010</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+
+
+                    <hr>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_7" src="yueying/exhibitions/2000美国纸绘画.jpg" border="0">
+                        </a>
+                    </div>
+                    <div  id = "text_7" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9">美国全国纸上绘画, 2000</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+                    <hr>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <div class="image-area">
+                        <a class="img-event-poster">
+                            <img id ="image_7" src="yueying/exhibitions/1993东京展.jpg" border="0">
+                        </a>
+                    </div>
+                    <div  id = "text_7" class="text-area">
+                        <p>
+                            <span id="exhibition5" class="dates color-9">东京第十二回亚洲国际是墨展, 1993</span>
+                        </p>
+                    </div>
+                    <div class="push">
+                    </div>
+                    <hr>
+                </div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+</div>
+    </td>
+</tr>
+</tbody>
+</table>
+</td>
+
+</tr>
+<tr>
+    <td id="BottomPane" colspan="4" class="bottomPane">
+        <div class="bottom page-width">
+            <hr>
+            <span class="copyrights"> </span>
+        </div>
+    </td>
+
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+</body>
+</html>

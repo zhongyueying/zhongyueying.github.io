@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="tabid-1 ">
+<head>
+    <title id="title">Yueying Zhong Ink painting</title>
+    <meta name="keywords"></meta>
+    <meta name="description"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+    <link href="styles/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+        var descs = Array(
+                "河北老农-1&nbsp;&nbsp;114cmx85cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1982",
+                "河北老农-2&nbsp;&nbsp;110cmx85cm &nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1982",
+                "银须老汉&nbsp;&nbsp;  50cm x 32cm&nbsp;&nbsp; 水墨 宣纸&nbsp;&nbsp;       1983",
+                "矿工-1 &nbsp;&nbsp;50 cmx30cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1983",
+                "长胡子老者&nbsp;&nbsp;   	50cmx30cm&nbsp;&nbsp;                 墨/宣纸&nbsp;&nbsp;1983",
+                "少先队员 &nbsp;&nbsp;	90 cmx65cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1984",
+                "清源乡亲-1&nbsp;&nbsp;	110cmx88cm &nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1981",
+                "清源乡亲-2 &nbsp;&nbsp;	110cmx88cm &nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1981",
+                "河北老农-3&nbsp;&nbsp;110cmx85cm &nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1982",
+                "沧桑 &nbsp;&nbsp;120 cmx72cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1983",
+                "老者 &nbsp;&nbsp;120 cmx72cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1983",
+                "抽烟的老农	114cmx85cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1982",
+                "老妇人&nbsp;&nbsp;90 cmx65cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1984",
+                "矿工-2&nbsp;&nbsp;45 cmx30cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1983",
+                "乡村学生	&nbsp;&nbsp; 90 cmx65cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1984",
+                "清源乡亲-3	&nbsp;&nbsp;110cmx88cm &nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1981",
+                "清源乡亲-4	&nbsp;&nbsp;110cm x 88cm &nbsp;&nbsp;    水墨 宣纸&nbsp;&nbsp;     1981",
+                "妇人	 &nbsp;&nbsp;   90cm x 65cm  &nbsp;&nbsp;     水墨 宣纸&nbsp;&nbsp;        1982",
+                "执伞女&nbsp;&nbsp;120 cmx80cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1984",
+                "少年&nbsp;&nbsp;85 cmx65cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1982",
+                "河北老农-4 &nbsp;&nbsp;  110cmx80cm &nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1982",
+                "河北老农-5 &nbsp;&nbsp;    110cmx80cm &nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1982",
+                "河北老农-6 &nbsp;&nbsp;      110cmx80cm &nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1982",
+                "河北老农-7 &nbsp;&nbsp;       110cm x 80cm &nbsp;&nbsp;         水墨 宣纸&nbsp;&nbsp;       1982",
+                "藏胞-1&nbsp;&nbsp;110 cmx85cm&nbsp;&nbsp;水墨/宣纸&nbsp;&nbsp;1995",
+                "河北老农-8&nbsp;&nbsp;   110cm x 80cm  &nbsp;&nbsp;     水墨 宣纸  &nbsp;&nbsp;              1982",
+                "藏胞-2&nbsp;&nbsp;110 cmx85cm&nbsp;&nbsp;水墨/宣纸 &nbsp;&nbsp;            1995",
+                "祈祷 &nbsp;&nbsp;       115cm x 89cm &nbsp;&nbsp;      水墨 宣纸      &nbsp;&nbsp;                1985",
+                "矿工-3&nbsp;&nbsp;120 cmx72cm&nbsp;&nbsp;水墨/宣纸 &nbsp;&nbsp;            1983",
+                "藏胞-3&nbsp;&nbsp;110 cmx85cm&nbsp;&nbsp;水墨/宣纸 &nbsp;&nbsp;             1995",
+                "藏胞-4&nbsp;&nbsp;110 cmx85cm&nbsp;&nbsp;水墨/宣纸 &nbsp;&nbsp;             1995",
+                "新疆歌者 &nbsp;&nbsp;	110 cmx85cm&nbsp;&nbsp;水墨/宣纸 &nbsp;&nbsp;            1993",
+                "矿工-4 &nbsp;&nbsp;	120cm x 72cm &nbsp;&nbsp;          水墨 宣纸 &nbsp;&nbsp;                  1983",
+                "老猎手 &nbsp;&nbsp;	  168cm x 120cm &nbsp;&nbsp;       水墨 宣纸 &nbsp;&nbsp;                  1983",
+                "老猎手(局部)	&nbsp;&nbsp;            水墨 宣纸 &nbsp;&nbsp;             1983",
+                "河北老农 &nbsp;&nbsp;              48cm x 25cm &nbsp;&nbsp;       水墨 宣纸&nbsp;&nbsp;           1982"
+        );
+        var images = Array(
+                "scan0001.jpg",
+                "scan0002.jpg",
+                "新相机拍_009.jpg",
+                "新相机拍_010.jpg",
+                "新相机拍_014.jpg",
+                "新相机拍_032.jpg",
+                "新相机拍_033.jpg",
+                "新相机拍_036.jpg",
+                "新相机拍_037.jpg",
+                "新相机拍_038.jpg",
+                "新相机拍_041.jpg",
+                "新相机拍_043.jpg",
+                "新相机拍_045.jpg",
+                "新相机拍_047.jpg",
+                "新相机拍_048.jpg",
+                "新相机拍_051.jpg",
+                "新相机拍_054.jpg",
+                "新相机拍_055.jpg",
+                "新相机拍_059.jpg",
+                "新相机拍_060.jpg",
+                "新相机拍_061.jpg",
+                "新相机拍_062.jpg",
+                "新相机拍_064.jpg",
+                "新相机拍_065.jpg",
+                "新相机拍_067.jpg",
+                "新相机拍_068.jpg",
+                "新相机拍_070.jpg",
+                "新相机拍_071.jpg",
+                "新相机拍_072.jpg",
+                "新相机拍_073.jpg",
+                "新相机拍_074.jpg",
+                "新相机拍_085.jpg",
+                "新相机拍_086.jpg",
+                "新相机拍_159.jpg",
+                "新相机拍_160.jpg",
+                "新相机拍_011.jpg"
+
+        )
+
+        function buildSegment(thumbDir, largeImageDir, srcImage, description) {
+            return ' <li> ' +
+                    ' <a> ' +
+                    ' <img src=' + thumbDir + '/' + srcImage + ' onClick="showImage(\'' + largeImageDir + '/' + srcImage + '\',\'' + description + '\');" >' +
+                    ' </a><br> ' +
+                //'  <span class="caption">' + description + ' </span> ' +
+                    ' </li>' +
+                    ' ';
+        }
+
+        $(document).ready(function () {
+            var htmlText = "";
+            for (var i = 0; i < images.length; i++) {
+                var thumbPath = "yueying/thumbnails_people";
+                var largeImagePath = "yueying/midsize_people";
+
+                htmlText += buildSegment(thumbPath, largeImagePath, images[i], descs[i]);
+            }
+
+            document.getElementById('publications-table').innerHTML =
+                    '<ul class="publications-table"> ' +
+                            htmlText +
+                            '</ul>';
+
+        });
+
+        function showImage(srcImage, description) {
+
+            document.getElementById('publications-table').innerHTML =
+                    '<ul>' +
+                            ' <li> ' +
+                            '       <a href="painting_1_ch.html" target="_blank">         ' +
+                            '       <img src=' + srcImage + '> ' +
+                            '       </a><br> ' +
+                            '        <span class="caption">' + description + ' </span> ' +
+                            '</li> ' +
+                            '<li> &nbsp; </li> ' +
+                            '</ul>';
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+<form name="painting-1" id="painting-1">
+
+    <table id="tblouterTable" class="outer-table" width="100%" cellspacing="0" cellpadding="0" border="0" height="100%">
+        <tbody>
+        <tr>
+            <td valign="top" height="100%" class="mainCell">
+                <table cellspacing="0" cellpadding="0" border="0" class="mainTable">
+                    <tbody>
+                    <tr>
+                        <td id="TopPane" colspan="4" class="topPane">
+
+                            <div class="top page-width">
+                                <div class="logo-company">
+                                    <a href="index_ch.html">
+                                        <H4><B>钟跃英</B></H4>
+                                    </a>
+                                </div>
+                                <ul class="language-menu">
+                                    <li>
+                                        <a href="painting_1.html">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        &nbsp;|&nbsp;
+                                    </li>
+                                    <li>
+                                        <a href="painting_1_ch.html">
+                                            中文
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="push">
+                                </div>
+                                <ul class="main-menu-ch">
+                                    <li>
+                                        <a href="painting_1_ch.html">
+                                            水墨绘画—水墨人物
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="painting_2_ch.html">
+                                            水墨绘画—彩墨
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="painting_3_ch.html">
+                                            水墨绘画-水墨
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="exhibition_ch.html">
+                                            展览
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="publications_ch.html">
+                                            著作,论文
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about_ch.html">
+                                            关于我
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact_ch.html">
+                                            联系方式
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td id="ContentPane" class="contentPane" valign="top">
+                            <div id="publications" class="content page-width">
+                                <div class="title-page">
+                                    <h1>钟跃英 水墨绘画</h1>
+                                </div>
+                                <div id="publications-table">
+                                    <ul class="publications-table">
+                                        <li>
+                                            &nbsp;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td id="ContentPane" class="contentPane" valign="top">
+
+                            <div id="homepage" class="content  page-width">
+                                <div class="content page-width2">
+                                    <BR>
+                                    这些水墨人物画创作于1980年代前后, 那时候中国文化大革命刚刚结束, 艺术家遵循的是社会现实主义的写实方法, 上山下乡, 体验生活.钟跃英的这些水墨人物画,
+                                    生动地刻划出了人物独特的神情面貌, 在表现上集中在脸部的生动刻画, 尤其是农民脸上那经过常年风吹日晒所形成的皱纹, 粗壮的大手, 具有强烈的表现力, 这些水墨人物画,
+                                    可以堪称是二十世纪中国人物画的杰出典范, 理应得到社会的广泛赞誉.
+
+                                    <P></P>
+                                    马克.丹,约翰逊 <BR>
+                                    旧金山加州州立大学美术史教授,美术馆馆长
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="BottomPane" colspan="4" class="bottomPane">
+                            <div class="bottom page-width">
+                                <hr>
+                                <span class="copyrights"> </span>
+                            </div>
+                        </td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</form>
+
+
+</body>
+</html>

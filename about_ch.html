@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="tabid-46 isfair-1 ">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title id="title">Yueying Zhong's painting</title>
+    <meta name="keywords"></meta>
+    <meta name="description"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link href="styles/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        var pub_section = Array("", "教育", "专业任职", "获奖", "个展", "联展","著作", "论文",
+                                "艺术评论", "展览图录", "电视报道", "访谈","新闻报道")
+
+        var pub0 = Array("1960年生于黑龙江省齐齐哈尔市",
+                "现为鲁迅美术学院客座教授, 居住在美国加州旧金山湾区,",
+                " 从事水墨艺术创作和理论写作."
+                )
+
+        var pub1 = Array("1988-1991	鲁迅美术学院文学硕士学位",
+                "1985-1986	北京大学进修",
+                "1984-1985	文化部文化管理干部学院学习",
+                "1980-1984	鲁迅美术学院文学学士学位"
+                )
+        var pub2 = Array (
+                " 2007-至今, 鲁迅美术学院客座教授"
+                , "2012-至今, <<美术视野>>杂志编委"
+                , "1995	鲁迅美术学院破格晋升副教授"
+                , "1992	<<当代学院艺术>>杂志特邀编委"
+                , "1991	<美术>>杂志编辑"
+                , "1984-	毕业留校任教鲁迅美术学院");
+
+        var pub3 = Array( "2007	上海文艺出版总社学术文库出版基金         上海      中国"
+                , "2000	美国全国纸上绘画艺术	哥仑比亚学院	密苏里	美国"
+                , "1997	哥仑比亚春季艺术展一等奖		密苏里	美国"
+                , "1996	哥仑比亚第37届秋季艺术展荣誉奖	密苏里	美国"
+                , "1995	哥仑比亚第36届秋季艺术展一等奖	密苏里	美国"
+                , "1991	吴作人国际美术交流基金会奖	 	北京       美国"
+                , "1993	东京亚洲国际水墨展海外特别奖		东京	 日本"
+        );
+
+        var pub4 = Array( "2013	清华大学美术学院美术馆	中国"
+                , "2012	鲁迅美术学院美术馆	    	中国"
+                , "2011	沈阳大学美术馆		    	中国"
+                , "2009	Fonbonne大学		    	美国"
+                , "2008	硅谷亚洲艺术中心		美国"
+                , "2007	鲁迅美术学院美术馆	    	中国"
+                , "2007	山东中百美术馆		   	中国"
+                , "2006	Dominican 大学 		     	美国"
+                , "2003	Legacy Art &Book Works, Inc	美国"
+                , "2003	Saint Louis大学美术馆 		美国"
+                , "2002	Missouri大学			美国"
+                , "2001	Stephen学院			美国"
+                , "2001	Missouri州博物馆伊丽莎白画廊	美国"
+                , "2000 	William wood大学 		美国"
+                , "2000	KansasV画廊			美国"
+                , "1996	Columbia Dauphine 画廊 		美国"
+
+        );
+        var pub5 = Array("2013	湖社/鲁迅美术学院美术馆	沈阳	中国",
+        "2013	洛杉矶艺术博览会		 加州      美国",
+         "2013    	硅谷亚洲艺术中心                           加州      美国",
+         "2013	浙江省美术馆			浙江	中国",
+          "2013	旧金山中华文化中心, 旧金山加州州立大学                  旧金山	美国",
+                "2010	台北第三届当代水墨双年展         台北	台湾",
+                "2009       旧金山希尔顿大饭店画廊            旧金山    美国",
+                "2008       旧金山金融中心                            旧金山	美国",
+                "2008	Togonon画廊		             旧金山	美国",
+                "2007	旧金山湾区艺术家联展    南海艺术中心 	 美国",
+                "2006	当代水墨视野			北京 	中国",
+               "2006	Sausalito画廊		        Sausalito	美国",
+                "2002	Columbia艺术协会	           密苏里	美国",
+                "2001	Missouri州20位优秀艺术家      密苏里	美国",
+                "2000	全国纸上绘画艺术,Columbia学院    	美国",
+                "1999	全国纸上绘画艺术,Columbia学院   	美国",
+                "1998	Columbia艺术协会	           密苏里    	美国",
+                "1997	Columbia艺术协会	           密苏里	美国",
+                "1996	Saint Louis艺术协会 	       圣路易斯     	美国",
+                "1995	Columbia艺术协会	           密苏里	美国",
+                "1994	广岛秋季艺术展			广岛      	日本	",
+                "1993	第十二回东京亚洲国际水墨展	东京       日本",
+                "1992	东京亚洲艺术联展		东京	日本",
+                "1984	全国美术展沈阳展区		沈阳	中国"
+        ) ;
+
+        var pub6 = Array(
+          "2009	<<原创性艺术>> 上海书画出版社	             		 中国",
+          "2007	<<艺术创造力障碍的突破>> 上海画报出版社       		 中国",
+          "2000	<<气韵论>> 上海人民美术出版社2000			 中国",
+          "1999	<<中西美术史比较年表, 大事, 图表>> 辽宁美术出版	 中国"
+        );
+        var pub7  = Array( "先后在<<美术>>, <<美术观察>>, <<中国美术馆>>, <<国家美术>>, <<美苑>>和台湾<<炎黄艺术>>等艺术杂志发表学术论文70余篇"
+
+        )  ;
+
+        var pub8  = Array(" 移植到美国的水墨艺术			曾爱行	美术观察    7,2013",
+        "钟跃英的新水墨艺术			韦尔申   钟跃英的翰墨艺术画册 2013",
+        " 钟跃英的水墨绘画   			孙美兰   沈阳大学展览前言2010",
+        "“跨越文化界限” 				21世纪艺术网2009",
+        "“钟跃英的当代水墨画” 			圣路易斯新闻 2009",
+        "“宏伟的意象” 				圣路易斯时报 2009",
+        "“神秘的水墨世界” 			高木森, 芳帮大学图录 2009",
+        "“钟跃英的抽象山水” 			马克.丹. 约翰逊, 芳帮大学图录 2009",
+        '"彩墨世界--钟跃英绘画” 		高木森, 东方书画特辑 2009 ',
+        '“大山大水大境界”--读钟跃英的水墨艺术	乔乔, 国画家 1,2009',
+        '“大山大水大境界”--钟跃英的水墨艺术	丁巧巧, 美苑 2,2008',
+        '“飞跃于彩墨世界”-- 钟跃英的水墨画, 	高木森, 中国艺术新闻网1, 2008',
+        '“展现中华艺术之精神与品格” 		东方书画6 2007    ',
+        '“艺术之精神与品味”--画家钟跃英	圣路易斯时报, 4月3 2003',
+        '“中国艺术家眼中的美国山水” 		密苏里州堪萨斯星报, 美国 5,2000',
+        '      	情感性的绘画 				密苏里论坛, 美国1997',
+        '“纯正, 儒雅”--青年画家钟跃英的山水画	辽宁日报 10 月, 1994');
+
+        var pub9 = Array(
+            "<<艺术沙龙>> 				人民美术出版社 2013",
+            "北美水墨艺术家 			浙江省美术馆 2103",
+            "水墨时刻  				旧金山州立大学/旧金山中华文化中心,2013",
+            "钟跃英的翰墨艺术  			鲁迅美术学院中国画系 2012",
+            "2010年第三届台北当代水墨双年展	台湾行政院文化建设委员会 2010",
+            "钟跃英 , 				芳帮大学美术系,  2009",
+            "钟跃英水墨画集 			山东中百美术馆 2007"
+        )
+        var pub10 = Array(
+                "钟跃英的水墨艺术世界		旧金山湾区电视38频道,美国2008",
+                "美国制造的水墨艺术 		辽宁省北方电视频道,中国  2012",
+                "钟跃英的翰墨艺术    		北京企业家论坛,中国  2012"
+        )
+        var pub11 =Array("旅美画家,理论家钟跃英访谈   沈阳画院  2011")
+
+        var pub12 = Array(
+                "钟跃英的翰墨艺术		沈阳晚报 2012 ",
+                '“宏伟的意象”			美术同盟    2009',
+                '“宏伟的意象”			圣路易斯时报 2009',
+                '“钟跃英现代水墨画展” 		中国美术同盟新闻网, 2008',
+                '“钟跃英现代水墨画展” 		中国艺术新闻网, 2008',
+                '“钟跃英画展, 视觉盛宴” 		旧金山世界日报 美国1, 2008',
+                '“钟跃英现代水墨画展” 		旧金山明报 美国1, 2008',
+                '“钟跃英现代水墨画展” 		旧金山侨报 美国1, 2008',
+                '“执著中国现代画” 		世界日报 美国3, 2003',
+                '“悬浮, 墨迹” 			圣路易斯时报 美国1, 2003',
+                '“悬浮, 墨迹” 			圣路易斯新闻 美国1, 2003',
+                '“ Masters of Suspense” 		圣路易斯艺术和文化, 美国,3, 2003',
+                '        	“钟跃英画作, 中西融合” 		世界日报 美国,3, 2002',
+                '“艺术家钟跃英” 			密苏里州哥仑比亚论坛 美国, 3,2000',
+                '“中国画技巧写美国山水情” 	世界日报, 美国3, 2001',
+                '“文化遗产” 			哥仑比亚论坛 美国1, 2002'
+        )
+        var publications = Array(pub0, pub1, pub2, pub3, pub4, pub5, pub6, pub7, pub8, pub9,pub10, pub11, pub12);
+
+        function buildSectionTitle (title)  {
+           return ' <tr> <td> ' +
+           '<div class="wrapper"> ' +
+           '<div  class="text-area2">' +
+            '<br> ' +
+           ' <p> <span class="expotitle2"><B>' + title + '</B></span> ' +
+           '<br> </p> </div> ' +
+           ' <div class="push"> </div> ' +
+           ' <hr> ' +
+           '</div> </td> </tr> ' ;
+        }
+        function buildSegment (text)  {
+            return '<tr> ' +
+                   ' <td> ' +
+                   ' <div class="wrapper"> ' +
+                   ' <div class="text-area2"> ' +
+                   ' <p> ' +
+                   ' <span class="dates color-9">' + text +' </span> ' +
+                   ' <br> ' +
+                   ' </p> ' +
+                   ' </div> ' +
+                   ' </div> ' +
+                   ' </td> ' +
+                   ' </tr> ' ;
+        }
+
+        $( document ).ready(function() {
+
+            var htmlText ="";
+            for (var t = 0; t < pub_section.length; t++) {
+                htmlText += buildSectionTitle(pub_section[t]);
+                var section = publications[t];
+                for (var i=0;i<section.length;i++)
+                {
+                    htmlText += buildSegment(section[i]);
+                }
+            }
+
+            document.getElementById('publications').innerHTML =htmlText ;
+        });
+
+    </script>
+
+</head>
+<body>
+<form name="exhibition" id="exhibition_form">
+
+<table id="tblouterTable" class="outer-table" width="100%" cellspacing="0" cellpadding="0" border="0" height="100%">
+<tbody>
+<tr>
+<td valign="top" height="100%" class="mainCell">
+    <table cellspacing="0" cellpadding="0" border="0" class="mainTable">
+    <tbody>
+<tr>
+    <td id="TopPane" colspan="4" class="topPane">
+
+        <div class="top page-width">
+            <div class="logo-company">
+                <a href="index_ch.html">
+                    <H4><B>钟跃英</B></H4>
+                </a>
+            </div>
+            <ul class="language-menu">
+                <li>
+                    <a href="about.html">
+                        English
+                    </a>
+                </li>
+                <li>
+                    &nbsp;|&nbsp;
+                </li>
+                <li>
+                    <a href="about_ch.html">
+                        中文
+                    </a>
+                </li>
+            </ul>
+            <div class="push">
+            </div>
+            <ul class="main-menu-ch">
+                <li>
+                    <a href="painting_1_ch.html">
+                        水墨绘画—水墨人物
+                    </a>
+                </li>
+                <li>
+                    <a href="painting_2_ch.html">
+                        水墨绘画—彩墨
+                    </a>
+                </li>
+                <li>
+                    <a href="painting_3_ch.html">
+                        水墨绘画-水墨
+                    </a>
+                </li>
+                <li>
+                    <a href="exhibition_ch.html">
+                        展览
+                    </a>
+                </li>
+                <li>
+                    <a href="publications_ch.html">
+                        著作,论文
+                    </a>
+                </li>
+                <li>
+                    <a href="about_ch.html">
+                        关于我
+                    </a>
+                </li>
+                <li>
+                    <a href="contact_ch.html">
+                        联系方式
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td id="ContentPane" class="contentPane" valign="top">
+    <table id="idAboutMe" class="tableTemplate" cellspacing="0" cellpadding="0" border="0"
+       style="width:100%;border-collapse:collapse;">
+    <tbody>
+<tr>
+    <td>
+        <div id="exhibitions" class="content page-width">
+
+        <div class="list-wrapper current">
+        </div>
+        <span id="exhibition_title">
+	    	<div class="title-page">
+                <h1>
+                   About 钟跃英 (Yueying Zhong)
+                </h1>
+                <div>
+                    <img id="main-image" src="yueying/main_panel/2012年国内展_192.jpg"
+                         alt="Yueying Zhong"/>
+                </div>
+
+            </div>
+            <div class="push">
+            </div>
+
+        </span>
+
+        <div class="list-wrapper forthcoming active">
+            <table id="exhibition" class="event-list" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tbody>
+        <div id="publications">
+         </div>
+        </tbody>
+    </table>
+        </div>
+
+       </div>
+    </td>
+</tr>
+</tbody>
+</table>
+</td>
+
+</tr>
+<tr>
+    <td id="BottomPane" colspan="4" class="bottomPane">
+        <div class="bottom page-width">
+            <hr>
+            <span class="copyrights"> </span>
+        </div>
+    </td>
+
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+</body>
+</html>

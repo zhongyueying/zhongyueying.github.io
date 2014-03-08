@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="tabid-1 ">
+<head>
+    <title id="title">Yueying Zhong's painting</title>
+    <meta name="keywords"></meta>
+    <meta name="description"></meta>
+
+    <!--meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+    <link href="styles/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+        var descs = Array(
+                "水墨境象---56&nbsp;&nbsp;     140cm x 70cm 水墨 宣纸        &nbsp;&nbsp;  2013",
+                "水墨境象---53 &nbsp;&nbsp;   110cm x 70cm         水墨 宣纸        &nbsp;&nbsp;  2013",
+                "水墨境象---36&nbsp;&nbsp;     240cm x 120cm         水墨 宣纸        &nbsp;&nbsp;  2012",
+                "水墨境象---2  &nbsp;&nbsp;    140cm x 70cm  水墨 宣纸        &nbsp;&nbsp;  2013",
+                "水墨境象---10  &nbsp;&nbsp;   140cm x 140cm 水墨 宣纸        &nbsp;&nbsp;  2010",
+                "水墨境象---11  &nbsp;&nbsp;    140cm x 140cm 水墨 宣纸        &nbsp;&nbsp;  2010",
+                "水墨境象---12  &nbsp;&nbsp;    140cm x 140cm 水墨 宣纸        &nbsp;&nbsp;  2010",
+                "水墨境象---13  &nbsp;&nbsp;    140cm x 140cm 水墨 宣纸        &nbsp;&nbsp;  2010",
+                "水墨境象---14  &nbsp;&nbsp;    360cm x 360cm         水墨 宣纸        &nbsp;&nbsp;  2011",
+                "水墨境象---15  &nbsp;&nbsp;    240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;  2011",
+                "水墨境象---17  &nbsp;&nbsp;    240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2011",
+
+                "水墨境象---18  &nbsp;&nbsp;    240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;  2012",
+                "水墨境象---19  &nbsp;&nbsp;    240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;  2012",
+                "水墨境象---20  &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;  2012",
+                "水墨境象---21  &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;  2012",
+                "水墨境象---22  &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;  2012",
+                "水墨境象---23&nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---24&nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---28&nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---29&nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---30&nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+
+                "水墨境象---31&nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---32&nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---33 &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---34 &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---35 &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---37 &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---40 &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---41 &nbsp;&nbsp;   120cm x 120cm 水墨 宣纸   &nbsp;&nbsp;         2013",
+                "水墨境象---42 &nbsp;&nbsp;   120cm x 120cm 水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---43 &nbsp;&nbsp;   140cm x 120cm         水墨 宣纸        &nbsp;&nbsp;   2013  ", //30
+                "水墨境象---45 &nbsp;&nbsp;   140cm x 210cm         水墨 宣纸     &nbsp;&nbsp;     2013",
+                "水墨境象---48 &nbsp;&nbsp;   180cm x 90cm         水墨 宣纸        &nbsp;&nbsp;   2010",
+                "水墨境象---49 &nbsp;&nbsp;   140cm x 120cm  水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---50 &nbsp;&nbsp;   140cm x 140cm  水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---25 &nbsp;&nbsp;   140cm x 140cm  水墨 宣纸        &nbsp;&nbsp;   2012",
+                //"水墨境象---27 &nbsp;&nbsp;   94” x 282” 水墨 宣纸        &nbsp;&nbsp;   2012",  //36
+                "水墨境象---16 &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2011",           //45
+                "水墨境象---26 &nbsp;&nbsp;   240cm x 360cm          水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---38 &nbsp;&nbsp;   240cm x 360cm         水墨 宣纸        &nbsp;&nbsp;   2012",
+                "水墨境象---8 &nbsp;&nbsp;    90 cm x 180cm   水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---9 &nbsp;&nbsp;    110cm x 180cm   水墨 宣纸        &nbsp;&nbsp;   2013",     //40
+
+
+                "水墨境象---5 &nbsp;&nbsp;    140cm x 140cm    水墨 宣纸        &nbsp;&nbsp;   2013 ",
+                "水墨境象---6 &nbsp;&nbsp;    140cm x 140cm    水墨 宣纸        &nbsp;&nbsp;   2013 ",
+                "水墨境象---7 &nbsp;&nbsp;    140cm x 140cm    水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---4 &nbsp;&nbsp;    140cm x 140cm    水墨 宣纸        &nbsp;&nbsp;   2013",
+                //"水墨境象---16 &nbsp;&nbsp;   240cm x 240cm         水墨 宣纸        &nbsp;&nbsp;   2011",           //45
+                "水墨境象---27 &nbsp;&nbsp;   240cm x 720cm         水墨 宣纸        &nbsp;&nbsp;   2012",  //36
+                "水墨境象---47 &nbsp;&nbsp;    210cm x 120cm         水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---57  &nbsp;&nbsp;   210cm x 120cm     水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---51 &nbsp;&nbsp;    140cm x 210cm         水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---54 &nbsp;&nbsp;    140cm x 280cm         水墨 宣纸        &nbsp;&nbsp;   2013",
+                "水墨境象---55 &nbsp;&nbsp;     100cm x 70cm  水墨 宣纸        &nbsp;&nbsp;  2013"
+
+        );
+
+        var images = Array(
+                "跃英2013画作_033.jpg",
+                "跃英2013画作_027.jpg",
+                "Untitled_00091.jpg",
+                "2013新作_034.jpg",
+                "Image-006.jpg",
+                "Image-014.jpg",
+                "Image-015.jpg",
+                "Image-016.jpg",
+                "Image-027.jpg",
+                "Image-035.jpg",
+                "Untitled_00029.jpg",
+                "Untitled_00033.jpg",
+                "Untitled_00041.jpg",
+                "Untitled_00043.jpg",
+                "Untitled_00044.jpg",
+                "Untitled_00045.jpg",
+                "Untitled_00047.jpg",
+                "Untitled_00050.jpg",
+                "Untitled_00065.jpg",
+                "Untitled_00069.jpg", //20
+
+                "Untitled_00071.jpg",
+                "Untitled_00072.jpg",
+                "Untitled_00073.jpg",
+                "Untitled_00075.jpg",
+                "Untitled_00085.jpg",
+                "Untitled_00087.jpg",
+                "Untitled_00092.jpg",
+                "抽象小画_004.jpg",
+                "抽象小画_005.jpg",
+                "抽象小画_006.jpg", //30
+
+                "抽象小画_007.jpg",
+                "跃英2013画作_006.jpg",
+                "跃英2013画作_016.jpg",
+                "跃英2013画作_017.jpg",
+                "跃英2013画作_024.jpg",
+                //"Untitled_00052.jpg", //36
+                "Untitled_00028.jpg",      //45
+
+                "Untitled_00062.jpg",
+                "Untitled_00058.jpg",
+                "Untitled_00093.jpg",
+                "2013新作_058.jpg",     //40
+                "2013新作_044.jpg",
+                "2013新作_045.jpg",
+                "2013新作_047.jpg",
+                "2013新作_049.jpg",
+                "Untitled_00052.jpg", //36
+                //"Untitled_00028.jpg",      //45
+
+                "跃英2013画作_009.jpg",
+                "跃英2013画作_011.jpg",
+                "跃英2013画作_025.jpg",
+                "跃英2013画作_030.jpg",
+                "2013新作_056.jpg",
+                "跃英2013画作_031.jpg"
+        )
+
+        function buildSegment (thumbDir, largeImageDir, srcImage, description)  {
+            return ' <li> ' +
+                    ' <a> ' +
+                    ' <img src='+ thumbDir + '/' + srcImage + ' onClick="showImage(\'' + largeImageDir +  '/' + srcImage + '\',\'' +description + '\');" >' +
+                    ' </a><br> ' +
+                           //'  <span class="caption">' + description + ' </span> ' +
+                            ' </li>' +
+                            ' ' ;
+        }
+
+        $( document ).ready(function() {
+
+            var htmlText ="";
+
+            for (var i=0;i<images.length;i++)
+            {
+                var thumbPath = "yueying/thumbnails_waterink";
+                var largeImagePath = "yueying/midsize_waterink";
+                htmlText += buildSegment(thumbPath, largeImagePath, images[i], descs[i]);
+
+            }
+
+          document.getElementById('publications-table').innerHTML =
+            '<ul class="publications-table"> ' +
+                  htmlText +
+            '</ul>';
+
+        });
+
+        function showImage(srcImage, description) {
+
+            document.getElementById('publications-table').innerHTML  =
+                  '<ul>' +
+                    ' <li> ' +
+                            '       <a href="painting_3_ch.html" target="_blank">         ' +
+                            '       <img src='+ srcImage +'> ' +
+                            '       </a><br> ' +
+                            '        <span class="caption">' + description + ' </span> ' +
+                    '</li> ' +
+                    '<li> &nbsp; </li> ' +
+                    '</ul>';
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+<form name="painting-3"  id="painting-3">
+
+<table id="tblouterTable" class="outer-table" width="100%" cellspacing="0" cellpadding="0" border="0" height="100%">
+<tbody>
+<tr>
+<td valign="top" height="100%" class="mainCell">
+<table cellspacing="0" cellpadding="0" border="0" class="mainTable">
+<tbody>
+<tr>
+    <td id="TopPane" colspan="4" class="topPane">
+
+        <div class="top page-width">
+            <div class="logo-company">
+                <a href="index_ch.html">
+                    <H4><B>钟跃英</B></H4>
+                </a>
+            </div>
+            <ul class="language-menu">
+                <li>
+                    <a href="painting_3.html">
+                        English
+                    </a>
+                </li>
+                <li>
+                    &nbsp;|&nbsp;
+                </li>
+                <li>
+                    <a href="painting_3_ch.html">
+                        中文
+                    </a>
+                </li>
+            </ul>
+            <div class="push">
+            </div>
+            <ul class="main-menu-ch">
+                <li>
+                    <a href="painting_1_ch.html">
+                        水墨绘画—水墨人物
+                    </a>
+                </li>
+                <li>
+                    <a href="painting_2_ch.html">
+                        水墨绘画—彩墨
+                    </a>
+                </li>
+                <li>
+                    <a href="painting_3_ch.html">
+                        水墨绘画-水墨
+                    </a>
+                </li>
+                <li>
+                    <a href="exhibition_ch.html">
+                        展览
+                    </a>
+                </li>
+                <li>
+                    <a href="publications_ch.html">
+                        著作,论文
+                    </a>
+                </li>
+                <li>
+                    <a href="about_ch.html">
+                        关于我
+                    </a>
+                </li>
+                <li>
+                    <a href="contact_ch.html">
+                        联系方式
+                    </a>
+                </li>
+            </ul>
+            </ul>
+        </div>
+    </td>
+
+</tr>
+<tr>
+
+    <td id="ContentPane" class="contentPane" valign="top">
+        <div id="publications" class="content page-width">
+            <div class="title-page">
+                <h1>钟跃英 水墨绘画-水墨</h1>
+            </div>
+            <div id = "publications-table" >
+                <ul  class="publications-table">
+                <li>
+                    &nbsp;
+                </li>
+            </ul>
+            </div>
+        </div>
+    </td>
+
+</tr>
+<tr>
+
+    <td id="ContentPane" class="contentPane" valign="top">
+
+        <div id="homepage" class="content  page-width">
+            <div class="content page-width2">
+                <BR>
+                从钟跃英近几年的水墨创作中,我们可以体悟到跃英君艺术探索的着力点,以及他进行艺术实验的规模和成果. 他的作品着重于水和墨的表达力度,使用了大量的水分来稀释墨色,构成不同层次.从宣纸对水和墨承受的极限中, 创造出一种全新的当代水墨艺术形态和语言.他的作品充分调动了水墨的特性, 并从中挖掘出新的绘画元素, 在崇尚”自然天然”的表现理念中, 以简练概括性的手法, 突出水墨语言的传达魅力.他的山水, 已不是眼见的自然, 是自然和内在想象结合的产物, 一种更趋于抽象化的由水墨语言造就出来的意象.他对水墨语言的概括性运用, 简化了描述性的细节, 突出水墨表达的自身的特色, 墨色纯粹, 层次分明, 对比强烈, 使画面呈现出完整的气韵生机, 近几年来的绘画, 在水墨表现上更加简明扼要, 概括夸张, 宣扬的是”大道至简”, 又如石涛的”一画”, 那种”一画堪破鸿蒙”的气韵表达.
+
+                <P></P>
+                孙美兰<BR>
+                中央美术学院美术理论教授
+            </div>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td id="BottomPane" colspan="4" class="bottomPane">
+        <div class="bottom page-width">
+            <hr>
+            <span class="copyrights"> </span>
+        </div>
+    </td>
+
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+</form>
+
+
+</body>
+</html>

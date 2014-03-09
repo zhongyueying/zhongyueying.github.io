@@ -174,23 +174,46 @@
         }
         function buildSegment (title, imagePath, description)  {
 
-            return '<tr> ' +
-                   ' <td> ' +
-                   ' <div class="wrapper"> ' +
-                    ' <div class="image-area-with-text"> ' +
-                   '     <img id ="image_1" src="' + imagePath  + '" border="0"> <BR><BR>' +
-                    '     <span class="dates color-9">' + title +' </span> ' +
-                   '  </div> ' +
-                   ' <div id = "text_1" class="text-area"> ' +
-                   ' <p> ' +
-                    ' <span class="dates color-9">' + description + '</span><br>' +
-                    '</p>' +
-                    '</div> ' +
-                    '<div class="push"> </div> ' +
-                   // '<hr> ' +
-                    '</div>'  +
-                    ' </td> ' +
-                   ' </tr> ' ;
+            if (imagePath != '') {
+
+                return '<tr> ' +
+                        ' <td> ' +
+                        ' <div class="wrapper"> ' +
+                        ' <div class="image-area-with-text"> ' +
+                        '     <img id ="image_1" src="' + imagePath  + '" border="0"> <BR><BR>' +
+                        '     <span class="dates color-9">' + title +' </span> ' +
+                        '  </div> ' +
+                        ' <div id = "text_1" class="text-area"> ' +
+                        ' <p> ' +
+                        ' <span class="dates color-9">' + description + '</span><br>' +
+                        '</p>' +
+                        '</div> ' +
+                        '<div class="push"> </div> ' +
+                    // '<hr> ' +
+                        '</div>'  +
+                        ' </td> ' +
+                        ' </tr> ' ;
+
+            } else {
+
+                return '<tr> ' +
+                        ' <td> ' +
+                        ' <div class="wrapper"> ' +
+                        ' <div class="image-area-with-text"> ' +
+                        '     <span class="dates color-9">' + title +' </span> ' +
+                        '  </div> ' +
+                        ' <div id = "text_1" class="text-area"> ' +
+                        ' <p> ' +
+                        ' <span class="dates color-9">' + description + '</span><br>' +
+                        '</p>' +
+                        '</div> ' +
+                        '<div class="push"> </div> ' +
+                    // '<hr> ' +
+                        '</div>'  +
+                        ' </td> ' +
+                        ' </tr> ' ;
+
+            }
 
 
         }
